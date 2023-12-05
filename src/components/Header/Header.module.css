@@ -1,0 +1,28 @@
+.sidebar {
+    background: #333333;
+    width: 300px;
+    height: 100vh;
+}
+
+.container {
+    padding-top: 16px;
+}
+
+.sidebar_item {
+    margin: 32px;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid #646cff;
+    cursor: pointer;
+}
+.sidebar_item:hover {
+    background: #646cff66;
+}
+.inactive {
+    color: #fff;
+    text-decoration: none;
+}
+.active {
+    color: #646cff;
+    text-decoration: none;
+  }

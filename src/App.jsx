@@ -1,35 +1,34 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Main from './components/Main/Main';
+import Article from './components/Article/Article';
+import Bet from './components/Bet/Bet';
+import Client from './components/Client/Client';
+import Instruction from './components/Instruction/Instruction';
+import Project from './components/Project/Project';
+import Shift from './components/Shift/Shift';
+import Workers from './components/Workers/Workers'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    return (
+        <BrowserRouter>
+            <div className="container">
+                <Switch>
+                    <Route exact path="/" component={Main} />
+                    <Route path="/client" component={Client} />
+                    <Route path="/project" component={Project} />
+                    <Route path="/bet" component={Bet} />
+                    <Route path="/article" component={Article} />
+                    <Route path="/instruction" component={Instruction} />
+                    <Route path="/shift" component={Shift} />
+                    <Route path="/workers" component={Workers} />
+                    <Redirect to="/"/>
+                </Switch>
+            </div>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
