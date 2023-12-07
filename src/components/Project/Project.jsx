@@ -6,8 +6,8 @@ function Project() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Project
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

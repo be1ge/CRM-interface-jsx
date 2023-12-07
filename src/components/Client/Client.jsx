@@ -6,8 +6,8 @@ function Client() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Client
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

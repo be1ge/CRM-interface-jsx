@@ -6,8 +6,8 @@ function Shift() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Shift
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

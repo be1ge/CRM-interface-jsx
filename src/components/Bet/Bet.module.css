@@ -1,3 +1,7 @@
 .content {
     display: flex;
+}.topbar {
+    width: calc(100vw - 250px);
+    height: 60px;
+    background: #29292f;
 }

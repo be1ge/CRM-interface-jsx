@@ -6,7 +6,9 @@ function Instruction() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>Instruction</div>
+            <div className={styles['topbar']}>
+                
+            </div>
         </div>
     );
 }

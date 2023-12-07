@@ -6,8 +6,8 @@ function Workers() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Workers
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

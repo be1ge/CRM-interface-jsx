@@ -6,8 +6,8 @@ function Article() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Article
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

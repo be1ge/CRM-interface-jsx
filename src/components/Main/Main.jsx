@@ -6,8 +6,8 @@ function Main() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Main
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );

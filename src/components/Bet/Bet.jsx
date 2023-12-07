@@ -6,8 +6,8 @@ function Bet() {
     return (
         <div className={styles['content']}>
             <Header />
-            <div>
-                Bet
+            <div className={styles['topbar']}>
+                
             </div>
         </div>
     );
