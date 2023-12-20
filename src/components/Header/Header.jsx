@@ -6,9 +6,6 @@ function Header() {
     return (
         <div className={styles['sidebar']}>
             <div className={styles['container']}>
-                <div className={styles['filler']}>
-                    
-                </div>
                 <NavLink
                     className={styles['inactive']}
                     activeClassName={styles['active']}
@@ -16,7 +13,12 @@ function Header() {
                     to="/"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Main</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img src="./src/assets/icons/home.svg" alt="" />
+                            </div>
+                            <div>Main</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -25,7 +27,12 @@ function Header() {
                     to="/project"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Project</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img src="./src/assets/icons/list.svg" alt="" />
+                            </div>
+                            <div>Project</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -34,7 +41,15 @@ function Header() {
                     to="/article"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Article</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img
+                                    src="./src/assets/icons/barcode.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>Article</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -43,7 +58,12 @@ function Header() {
                     to="/bet"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Bet</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img src="./src/assets/icons/bet.svg" alt="" />
+                            </div>
+                            <div>Bet</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -52,7 +72,15 @@ function Header() {
                     to="/client"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Client</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img
+                                    src="./src/assets/icons/client.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>Client</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -62,7 +90,13 @@ function Header() {
                 >
                     <div className={styles['sidebar_item']}>
                         <div className={styles['sidebar_text']}>
-                            Instruction
+                            <div>
+                                <img
+                                    src="./src/assets/icons/instruction.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>Instruction</div>
                         </div>
                     </div>
                 </NavLink>
@@ -72,7 +106,15 @@ function Header() {
                     to="/shift"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Shift</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img
+                                    src="./src/assets/icons/shift.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>Shift</div>
+                        </div>
                     </div>
                 </NavLink>
                 <NavLink
@@ -81,7 +123,15 @@ function Header() {
                     to="/workers"
                 >
                     <div className={styles['sidebar_item']}>
-                        <div className={styles['sidebar_text']}>Workers</div>
+                        <div className={styles['sidebar_text']}>
+                            <div>
+                                <img
+                                    src="./src/assets/icons/workers.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>Workers</div>
+                        </div>
                     </div>
                 </NavLink>
             </div>
