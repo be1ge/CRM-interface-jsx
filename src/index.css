@@ -9,6 +9,7 @@
   --sidebar-color: #fffefe;
   --sidebar-text-color: #343142;
   --content-color: #f2f1f8;
+  --content-accent-color: #d1d0e1;
 }
 
 a {
@@ -24,6 +25,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--content-color);
+  
 }
 
 h1 {

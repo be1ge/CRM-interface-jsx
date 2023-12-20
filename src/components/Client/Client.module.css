@@ -1,8 +1,15 @@
 .content {
     display: flex;
 }
+.content_container {
+    width: calc(100vw - 250px);
+}
 .topbar {
     width: calc(100vw - 250px);
-    height: 60px;
+    height: 200px;
     background: var(--topbar-color);
+    border-bottom: 2px solid var(--content-accent-color);
+}
+.main {
+
 }
