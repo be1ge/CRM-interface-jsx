@@ -8,8 +8,40 @@
     width: calc(100vw - 250px);
     height: 200px;
     background: var(--topbar-color);
-    border-bottom: 2px solid var(--content-accent-color);
 }
 .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+table {
+    min-width: 75%;
+    text-align: center;
+}
 
+tr td{
+    height: 2em;
+}
+table {
+	width: 100%;
+	border-collapse: collapse; 
+}
+table th {
+    font-weight: bold;
+	padding: 5px;
+	background: var(--topbar-color);
+	border: 1px solid var(--content-accent-color);
+}
+
+table td {
+	border: 1px solid var(--content-accent-color);
+	padding: 5px;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background: var(--content-accent-color);
+    td {
+        border: 1px solid #b8b7c6;
+    }
 }
